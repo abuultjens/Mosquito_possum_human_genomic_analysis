@@ -9,8 +9,13 @@ There are 22 core SNPs among these isolates.
 This is just the 36 VIC, without the possum and the mozzie seqs:
 36-VIC_fofn.txt
 Then there are 117 core SNPs (36-VIC.tab).
-
 95 core SNPs are lost through the inclusion of the seqcap datasets.
+
+36-VIC_W-possum-DMG2300866
+122 SNPs
+
+36-VIC_W-possum-DMG2300867
+108 SNPs
 
 When including just the 36-VIC and the two possum seqcap:
 37-VIC_POSSUM-DMG2300866-DMG2300867_fofn.txt
