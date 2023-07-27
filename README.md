@@ -12,6 +12,10 @@ Then there are 117 core SNPs (36-VIC.tab).
 
 95 core SNPs are lost through the inclusion of the seqcap datasets.
 
+When including just the 36-VIC and the two possum seqcap:
+37-VIC_POSSUM-DMG2300866-DMG2300867_fofn.txt
+37-VIC_POSSUM-DMG2300866-DMG2300867.tab 
+There are 98 SNPs.
 
 
 
