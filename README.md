@@ -1,4 +1,4 @@
-# Mozzie_possum_human_gnomic_analysis
+# Mozzie_possum_human_genomic_analysis
 ```Genomic analysis of mosquito, possum and human derived M. ulcerans genomes
 
 This is the tree that was used:
