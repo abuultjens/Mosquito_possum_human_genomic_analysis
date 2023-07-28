@@ -22,6 +22,35 @@ When including just the 36-VIC and the two possum seqcap:
 37-VIC_POSSUM-DMG2300866-DMG2300867.tab 
 There are 98 SNPs.
 
+# run the missing allele classifier script
+sh fofn-checker.sh
+
+# run the evaluation script
+sh evaluate.sh [ALL_IMPUTATION.csv]
+
+
+Allele imputation:
+
+default RFC:
+Evaluating DMG2300866:
+0.927038626609442
+[[111   7]
+ [ 10 105]]
+Evaluating DMG2300867:
+0.8540772532188842
+[[114   4]
+ [ 30  85]]
+
+default SVC:
+Evaluating DMG2300866:
+0.9356223175965666
+[[111   5]
+ [ 10 107]]
+Evaluating DMG2300867:
+0.8454935622317596
+[[112   4]
+ [ 32  85]]
+
 
 
 
