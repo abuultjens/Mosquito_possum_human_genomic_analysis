@@ -31,43 +31,47 @@ sh evaluate.sh [ALL_IMPUTATION.csv]
 
 Allele imputation:
 
+# this is for core SNP sites in the possum seqcap genomes where there were no missing data between the two datasets (88 sites)
+# the test feature matrix had NaN for all sites where the mozzie data was missing.
+
+
 default RFC:
 Evaluating DMG2300866:
-0.927038626609442
+0.9431818181818182
 [[111   7]
  [ 10 105]]
 Evaluating DMG2300867:
-0.8540772532188842
+0.9545454545454546
 [[114   4]
  [ 30  85]]
 
 default RFC with random upsampling:
 Evaluating DMG2300866:
-0.9227467811158798
+0.9431818181818182
 [[110   7]
  [ 11 105]]
 Evaluating DMG2300867:
-0.8497854077253219
+0.9545454545454546
 [[113   4]
  [ 31  85]]
 
 default SVC:
 Evaluating DMG2300866:
-0.9356223175965666
+0.9431818181818182
 [[111   5]
  [ 10 107]]
 Evaluating DMG2300867:
-0.8454935622317596
+0.9545454545454546
 [[112   4]
  [ 32  85]]
 
 default LGR:
 Evaluating DMG2300866:
-0.9356223175965666
+0.9431818181818182
 [[111   5]
  [ 10 107]]
 Evaluating DMG2300867:
-0.8454935622317596
+0.9545454545454546
 [[112   4]
  [ 32  85]]
 
