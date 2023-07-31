@@ -23,7 +23,7 @@ When including just the 36-VIC and the two possum seqcap:
 There are 98 SNPs.
 
 # run the missing allele classifier script
-sh fofn-checker.sh
+sh impute.sh
 
 # run the evaluation script
 sh evaluate.sh [ALL_IMPUTATION.csv]
