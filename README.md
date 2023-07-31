@@ -22,6 +22,19 @@ When including just the 36-VIC and the two possum seqcap:
 37-VIC_POSSUM-DMG2300866-DMG2300867.tab 
 There are 98 SNPs.
 
+
+## steps to make the SNP tables:
+1) transpose
+2) one hot encoding using OHE.py
+3) remove all 'NA' alleles, eg CP085200_16896_NA and keep CP085200_16896_C (EXCEL)
+4) split off the 36 clinical isolates from the 3 seq cap:
+36-VIC_noref.tr.OHE_WO-NA.csv
+3-seqcap-NA_noref.tr.OHE_WO-NA.csv
+5) code all alleles in seqcap SNP table as '0' if that pos was NA inn the mozzie (EXCEL)
+3-seqcap-NA_noref.tr.OHE_WO-NA_SAME-NA-AS-MOZZIE.csv
+
+
+
 # run the missing allele classifier script
 sh impute.sh
 
