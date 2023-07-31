@@ -34,13 +34,25 @@ There are 98 SNPs.
 3-seqcap-NA_noref.tr.OHE_WO-NA_SAME-NA-AS-MOZZIE.csv
 
 
-
+########### Impute
 # run the missing allele classifier script
 sh impute.sh
 
+# requires:
+117_POS.txt
+ML.py
+36-VIC_noref.tr.OHE_WO-NA.csv
+3-seqcap-NA_noref.tr.OHE_WO-NA_SAME-NA-AS-MOZZIE.csv
+
+########### Evaluate
 # run the evaluation script
 sh evaluate.sh [ALL_IMPUTATION.csv]
 
+# requires:
+3-seqcap-NA_noref.tr.OHE_WO-NA.csv
+evaluate.py
+
+###########
 
 Allele imputation:
 
