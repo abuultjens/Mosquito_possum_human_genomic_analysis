@@ -74,38 +74,4 @@ Evaluating DMG2300867:
 [[114   4]
  [ 30  85]]
 
-default RFC with random upsampling:
-Evaluating DMG2300866:
-0.9431818181818182
-[[110   7]
- [ 11 105]]
-Evaluating DMG2300867:
-0.9545454545454546
-[[113   4]
- [ 31  85]]
-
-default SVC:
-Evaluating DMG2300866:
-0.9431818181818182
-[[111   5]
- [ 10 107]]
-Evaluating DMG2300867:
-0.9545454545454546
-[[112   4]
- [ 32  85]]
-
-default LGR:
-Evaluating DMG2300866:
-0.9431818181818182
-[[111   5]
- [ 10 107]]
-Evaluating DMG2300867:
-0.9545454545454546
-[[112   4]
- [ 32  85]]
-
-
-
-
-
 ```
