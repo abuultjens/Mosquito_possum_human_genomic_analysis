@@ -22,6 +22,10 @@ When including just the 36-VIC and the two possum seqcap:
 37-VIC_POSSUM-DMG2300866-DMG2300867.tab 
 There are 98 SNPs.
 
+When all three seqcap datasets are added there are 22 core SNPs:
+22_SNPs_36-VIC_3-seqcap
+
+
 
 ## steps to make the SNP tables:
 1) transpose
