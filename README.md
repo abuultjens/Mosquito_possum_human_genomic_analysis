@@ -1,6 +1,10 @@
 # Mozzie_possum_human_genomic_analysis
 ```Genomic analysis of mosquito, possum and human derived M. ulcerans genomes
 
+18 SNPs with only DMG2304587_mincov-1 and DMG2304588_mincov-1 (no DMG2212098-DMG2301551_mincov-1_ONLY_mapped-reads)
+32 SNPs with only DMG2304587_mincov-1 (no DMG2212098-DMG2301551_mincov-1_ONLY_mapped-reads)
+62 SNPs with only DMG2304587_mincov-1 (no DMG2212098-DMG2301551_mincov-1_ONLY_mapped-reads)
+
 
 6 SNPs with DMG2304587_mincov-1 and DMG2304588_mincov-1
 8 SNPs with DMG2304587_mincov-1
