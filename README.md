@@ -2,6 +2,11 @@
 ```Genomic analysis of mosquito, possum and human derived M. ulcerans genomes
 
 
+6 SNPs with DMG2304587_mincov-1 and DMG2304588_mincov-1
+8 SNPs with DMG2304587_mincov-1
+17 SNPs with DMG2304588_mincov-1
+
+
 5 SNPs with DMG2304587_mincov-1_ONLY_mapped-reads_mincov-1 and DMG2304588_mincov-1_ONLY_mapped-reads_mincov-1
 8 SNPs with DMG2304587_mincov-1_ONLY_mapped-reads_mincov-1
 16 SNPs with DMG2304588_mincov-1_ONLY_mapped-reads_mincov-1
