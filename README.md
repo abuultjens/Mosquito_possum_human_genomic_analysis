@@ -64,6 +64,8 @@ sh snippy_full_to_subset_csv.sh tmp.full.clean.aln tmp_fofn.txt 117_POS.csv 36-V
 
 sh impute.sh
 
+add "CHROMOSOME_POSITION_ALLELE" to col1 header and isolate names
+
 python imputation_to_alignment.py
 
 
