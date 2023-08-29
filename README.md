@@ -56,6 +56,12 @@ When all three seqcap datasets are added there are 22 core SNPs:
 3-seqcap-NA_noref.tr.OHE_WO-NA_SAME-NA-AS-MOZZIE.csv
 
 
+snippy-clean_full_aln tmp.full.aln > tmp.full.clean.aln
+
+sh snippy_full_to_subset_csv.sh tmp.full.clean.aln tmp_fofn.txt 117_POS.csv 36-VIC_4-seqcap-mincov-1_full_subset.csv
+
+
+
 ########### Impute
 # run the missing allele classifier script
 sh impute.sh
