@@ -48,7 +48,7 @@ When all three seqcap datasets are added there are 22 core SNPs:
 ## steps to make the SNP tables:
 1) transpose
 2) one hot encoding using OHE.py
-3) remove all 'NA' alleles, eg CP085200_16896_NA and keep CP085200_16896_C (EXCEL)
+3) remove all 'NA' and 'N' alleles, eg CP085200_16896_NA and keep CP085200_16896_C (EXCEL)
 4) split off the 36 clinical isolates from the 3 seq cap:
 36-VIC_noref.tr.OHE_WO-NA.csv
 3-seqcap-NA_noref.tr.OHE_WO-NA.csv
