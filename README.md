@@ -4,6 +4,16 @@ Genomic analysis of mosquito, possum and human derived *Mycobacterium. ulcerans*
 
 ## Missing SNP imputation:
 
+### Dependencies:
+```
+
+snippy v4.4.5
+pandas v1.4.2
+numpy v1.23.3
+sklearn v1.1.2
+
+```
+
 ```
 
 # clean the snippy.full.aln
