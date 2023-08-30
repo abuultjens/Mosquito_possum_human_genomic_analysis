@@ -56,14 +56,48 @@ When all three seqcap datasets are added there are 22 core SNPs:
 3-seqcap-NA_noref.tr.OHE_WO-NA_SAME-NA-AS-MOZZIE.csv
 
 
+######################################################################################
 
-
+# clean full.aln
 snippy-clean_full_aln tmp.full.aln > tmp.full.clean.aln
 
+# make subset of full.aln
 sh snippy_full_to_subset_csv.sh tmp.full.clean.aln tmp_fofn.txt 117_POS.csv 36-VIC_4-seqcap-mincov-1_full_subset.csv
+
+# OHE
+python OHE.py
+
+# extract the seqcap columns to new file and removal all 'nan' rows
+Excel
 
 # replace the 'N' alleles with 'nan' for specific individuals at specific sites
 python replace_N-allele_with_nan.py
+
+# remove all rows with 'N'
+Excel
+
+# impute
+python IterativeImputer.py
+
+# combine the train and test tables
+Excel
+
+# transpose matrix
+tr ',' '\t' < IMPUTE_36-VIC_full_subset.OHE_WO-nan-N.csv | datamash transpose -H | tr '\t' ',' > IMPUTE_36-VIC_full_subset.OHE_WO-nan-N.tr.csv
+
+# convert allele by site to AGCT by site
+python imputation_to_alignment.py
+
+# convert csv to mfa
+sh AGCT-csv_to_mfa.sh IMPUTE_36-VIC_full_subset.OHE_WO-nan-N.tr.SITES.csv IMPUTE_36-VIC_full_subset.OHE_WO-nan-N.tr.SITES.aln
+
+# make tree
+nice FastTree -nt -gtr IMPUTE_36-VIC_full_subset.OHE_WO-nan-N.tr.SITES.aln > IMPUTE_36-VIC_full_subset.OHE_WO-nan-N.tr.SITES.FastTree-ML.nwk
+
+######################################################################################
+
+
+
 
 sh impute.sh
 
