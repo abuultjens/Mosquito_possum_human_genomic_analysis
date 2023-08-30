@@ -41,7 +41,7 @@ python imputation_to_alignment.py 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subs
 sh AGCT-csv_to_mfa_v2.sh 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.SITES.csv 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.SITES.aln
 ```
 
-## Phylogeographic figure generation (in R):
+## Phylogeographic figure generation (R v2021.09.2 Build 382):
 
 ```
 library(phytools)
