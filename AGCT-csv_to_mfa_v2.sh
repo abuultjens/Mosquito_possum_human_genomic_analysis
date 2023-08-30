@@ -18,10 +18,6 @@ fi
 N_TAXA=$(head -1 ${INFILE} | cut -f 2- -d ',' | tr ',' '\n' | wc -l)
 ONE=1
 
-# Debugging lines
-echo "N_TAXA: $N_TAXA"
-echo "ONE: $ONE"
-
 N_TAXA_PLUS_ONE=$(( ONE + N_TAXA ))
 seq 2 ${N_TAXA_PLUS_ONE} > ${RAND}_list.txt
 
