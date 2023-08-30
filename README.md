@@ -27,7 +27,7 @@ sh combiner.sh 36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.csv IMPUTE_SNPs.cs
 python imputation_to_alignment.py 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.csv 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.SITES.csv
 
 # convert from csv to multifasta alignment
-AGCT-csv_to_mfa_v2.sh 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.SITES.csv 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.SITES.aln
+sh AGCT-csv_to_mfa_v2.sh 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.SITES.csv 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.SITES.aln
 
 
 
