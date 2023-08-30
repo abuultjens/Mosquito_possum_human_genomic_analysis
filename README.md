@@ -1,5 +1,5 @@
 # Mozzie_possum_human_genomic_analysis
-Genomic analysis of mosquito, possum and human derived _M. ulcerans_ genomes
+Genomic analysis of mosquito, possum and human derived *Mycobacterium. ulcerans* genomes
 
 
 ## Missing SNP imputation:
