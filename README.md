@@ -63,6 +63,5 @@ plot(obj,colors=cols,ftype="off",cex.points=c(0,1.5), pts=FALSE)
 
 ```
 python SNP_position_plot.py [list_of_sites] [outfile.png]
-
 ```
 
