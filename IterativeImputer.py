@@ -10,9 +10,7 @@ TEST = sys.argv[2]
 X_train = pd.read_csv(TRAIN, header=0, index_col=0)
 X_test = pd.read_csv(TEST, header=0, index_col=0)
 
-#imp = KNNImputer(n_neighbors=2)
 imp = IterativeImputer(max_iter=10, random_state=0)
-#imp = SimpleImputer(missing_values=np.nan, strategy='mean')
 
 # Fit the imputer and transform the test set
 imp.fit(X_train)
