@@ -1,6 +1,52 @@
 # Mozzie_possum_human_genomic_analysis
 ```Genomic analysis of mosquito, possum and human derived M. ulcerans genomes
 
+
+# clean full.aln
+snippy-clean_full_aln tmp.full.aln > tmp.full.clean.aln
+
+# make subset of full.aln
+sh snippy_full_to_subset_csv.sh tmp.full.clean.aln 36-VIC_5-seqcap_fofn.txt 117_POS.csv 36-VIC_5-seqcap-mincov-1_full_subset.csv
+
+# OHE
+python OHE_v3.py 36-VIC_5-seqcap-mincov-1_full_subset.csv 36-VIC_5-seqcap-mincov-1_full_subset.OHE_v3.csv
+
+# split off the seqcap datasets
+sh splitter.sh 5-seqcap_fofn.txt 36-VIC_5-seqcap-mincov-1_full_subset.OHE_v3.csv 5-seqcap_36-VIC_5-seqcap-mincov-1_full_subset.OHE_v3.csv
+
+# split off the clinical isolates
+sh splitter.sh 36-clinical_fofn.txt 36-VIC_5-seqcap-mincov-1_full_subset.OHE_v3.csv 36-clinical_36-VIC_5-seqcap-mincov-1_full_subset.OHE_v3.csv
+
+# impute
+python IterativeImputer.py 36-clinical_36-VIC_5-seqcap-mincov-1_full_subset.OHE_v3.csv 5-seqcap_36-VIC_5-seqcap-mincov-1_full_subset.OHE_v3.csv IMPUTE_SNPs.csv
+
+# combine
+sh combiner.sh 36-clinical_36-VIC_5-seqcap-mincov-1_full_subset.OHE_v3.csv IMPUTE_SNPs.csv 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.csv
+
+# convert from allele by site to by site
+python imputation_to_alignment.py 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.csv 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.SITES.csv
+
+# AGCT-csv_to_mfa_v2.sh 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.SITES.csv 5-seqcap_36-clinical_36-VIC_5-seqcap_full_subset.OHE_v3.SITES.aln
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Excluding DMG2212098-DMG2301551_mincov-1_ONLY_mapped-reads:
 18 SNPs with only DMG2304587_mincov-1 and DMG2304588_mincov-1
 32 SNPs with only DMG2304587_mincov-1
