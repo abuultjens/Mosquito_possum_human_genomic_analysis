@@ -8,10 +8,10 @@ df = pd.read_csv(sys.argv[1], index_col=0)
 # Transpose the dataframe before one-hot encoding
 df_transposed = df.transpose()
 
-# Create an empty DataFrame to store the one-hot encoded data
+# Create an empty dataframe to store the one-hot encoded data
 one_hot_df_transposed = pd.DataFrame(index=df_transposed.index)
 
-# Iterate through the columns of the transposed DataFrame to perform custom one-hot encoding
+# Iterate through the columns of the transposed dataframe to perform custom one-hot encoding
 for col in df_transposed.columns:
     unique_values = df_transposed[col].unique()
     # Skip encoding for 'N' alleles
@@ -29,5 +29,5 @@ for col in df_transposed.columns:
 # Replace empty cells with 'nan'
 one_hot_df_transposed.replace(np.nan, 'nan', inplace=True)
 
-# Save the modified DataFrame to a CSV file
+# Save the modified dataframe to a csv file
 one_hot_df_transposed.to_csv(sys.argv[2])
