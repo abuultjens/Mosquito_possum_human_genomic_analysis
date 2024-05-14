@@ -19,8 +19,8 @@ IMPUTE = imp.transform(X_test)
 # Round the imputed values to get binary output
 IMPUTE_binary = np.round(IMPUTE).astype(int)
 
-# Create a DataFrame from the imputed array, preserving column names and index
+# Create a dataframe from the imputed array, preserving column names and index
 IMPUTE_df = pd.DataFrame(IMPUTE_binary, columns=X_test.columns, index=X_test.index)
 
-# Save the DataFrame to a CSV file, including the header
+# Save the aataframe to a CSV file, including the header
 IMPUTE_df.to_csv(sys.argv[3])
